@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Earth vs Moon</title>
+</head>
+<body>
+    <h1>Earth vs Moon</h1> 
+    <br>    
+    <img id="displayImage" src="images/earth.jpg" alt="Earth" width="500px"><br>
+        <input type="button" value="Show Earth" id="earth">
+        <input type="button" value="Show Moon" id="moon">
+        <script>
+            // function to display Earth image
+            function showEarth(){
+                document
+                    .getElementById("displayImage")
+                    .src = "images/earth.jpg"
+            }
+            // function to display Moon image
+            function showMoon(){
+                document
+                    .getElementById("displayImage")
+                    .src = "images/moon.jpg"
+            }
+
+            // bind the above functions to respective buttons
+            document
+                .getElementById("earth")
+                .addEventListener("click", showEarth);
+            
+            document
+                .getElementById("moon")
+                .addEventListener("click", showMoon);
+            
+        </script>
+</body>
+</html>
